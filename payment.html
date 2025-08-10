@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الدفع – sheiraq</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="container">
+  <div class="brand">
+    <img src="assets/logo.png" class="logo-img" alt="sheiraq">
+    <div class="name">sheiraq</div>
+  </div>
+  <nav>
+    <a href="index.html#order">رجوع للطلب</a>
+    <a href="tracking.html">تتبع الطلب</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>الدفع</h1>
+  <div class="card">
+    <h3>اختر طريقة الدفع</h3>
+    <form id="payForm" class="form">
+      <div class="row">
+        <label>طريقة الدفع</label>
+        <select id="payMethod" required>
+          <option value="zaincash">زين كاش</option>
+          <option value="rafidain_mc">ماستر كارد الرافدين</option>
+        </select>
+      </div>
+      <div class="row">
+        <label>صورة إيصال الدفع</label>
+        <input type="file" id="receipt" accept="image/*" required>
+        <p class="muted small">أرفِق صورة واضحة للوصل.</p>
+      </div>
+      <button class="cta" type="submit">إرسال الدفع</button>
+      <p id="msg" class="muted"></p>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© <span id="year"></span> sheiraq</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

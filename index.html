@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sheiraq – جلب سلة شي إن الكويت</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="container">
+  <div class="brand">
+    <img src="assets/logo.png" class="logo-img" alt="sheiraq">
+    <div class="name">sheiraq</div>
+  </div>
+  <nav>
+    <a class="active" href="#order">سلة شي إن</a>
+    <a href="tracking.html">تتبع الطلب</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>جلب سلة شي إن – الكويت</h1>
+  <div class="card">
+    <form id="cartForm" class="form">
+      <div class="row">
+        <label>الصق رابط السلة من تطبيق شي إن (الكويت)</label>
+        <input id="cartUrl" placeholder="https://..." required>
+      </div>
+      <button class="cta" type="submit">تحميل السلة</button>
+      <p class="muted small">ملاحظة: التحويل يكون من USD → IQD على 1350. أسعار الكويت تُحتسب KWD→USD≈3.25 داخل السيرفر.</p>
+    </form>
+  </div>
+
+  <div id="cartCard" class="card" style="display:none">
+    <h3>مراجعة المنتجات</h3>
+    <div id="items" class="items"></div>
+    <div class="totals">
+      <div>المجموع بالدولار: <strong id="sumUsd">-</strong> USD</div>
+      <div>المجموع بالدينار: <strong id="sumIqd">-</strong> IQD (على 1350)</div>
+    </div>
+    <a href="payment.html" id="confirmBtn" class="cta">تأكيد</a>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© <span id="year"></span> sheiraq</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
